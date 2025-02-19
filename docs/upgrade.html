@@ -16,7 +16,7 @@
 -->
 
 <script><!--#include virtual="js/templateData.js" --></script>
-
+<script><!--#include virtual="zk2kraft.html" --></script>
 <script id="upgrade-template" type="text/x-handlebars-template">
 
 <h4><a id="upgrade_4_1_0" href="#upgrade_4_1_0">Upgrading to 4.1.0 from any version 0.8.x through 4.0.x</a></h4>
@@ -45,10 +45,8 @@
             <a href="https://cwiki.apache.org/confluence/display/KAFKA/KIP-896%3A+Remove+old+client+protocol+API+versions+in+Kafka+4.0">KIP-896</a> for the details.
         </li>
         <li>
-            Before updating your Kafka cluster which build on Zookeeper to Kafka 4.0, you must understand what the updates and changes 
-            are between Zookeeper mode and Kraft mode. See the following page to learn about some of the significant changes in 
-            latest Kafka releases.
-            <!--#include virtual="zk2kraft.html" -->
+            Before updating your Kafka cluster built on Zookeeper to Kafka 4.0, you must understand the updates and changes
+            between Zookeeper mode and Kraft mode. See <a href="#upgrade-significant-changes">Significant Changes</a> in latest Kafka releases for more information.
         </li>
         <li>
             Apache Kafka 4.0 ships with a brand-new group coordinator implementation (See <a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=217387038#KIP848:TheNextGenerationoftheConsumerRebalanceProtocol-GroupCoordinator">here</a>.
